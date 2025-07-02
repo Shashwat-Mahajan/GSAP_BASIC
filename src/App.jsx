@@ -38,7 +38,7 @@ const App = () => {
       >
         MOve
       </button>
-      <img ref={imageRef} src="../public/images/messi.png"></img>
+      <img ref={imageRef} src="../images/messi.png"></img>
     </main>
   );
 };
