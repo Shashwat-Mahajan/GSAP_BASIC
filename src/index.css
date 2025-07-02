@@ -1,4 +1,22 @@
-*{
+@import "tailwindcss";
+@import '@fontsource-variable/orbitron';
+
+body {
+  font-family: 'Orbitron Variable', sans-serif;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(./assets/orbitron_5.2.6_latin-wght-normal.woff2);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/orbitron_5.2.6.zip);
+}
+
+
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,4 +62,4 @@ button{
 
 button:active{
   transform: scale(0.9);
-}
+} */
