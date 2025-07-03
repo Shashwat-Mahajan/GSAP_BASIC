@@ -49,12 +49,18 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
+import Marquee from './components/Marquee'
+import About from './components/About'
+import Eyes from './components/Eyes'
 
 const App = () => {
   return (
-    <div className='w-full h-screen bg-zinc-900'>
+    <div className='w-full bg-zinc-900 min-h-screen'>
       <Navbar />
       <Landing />
+      <Marquee />
+      <About />
+      <Eyes />
     </div>
   )
 }

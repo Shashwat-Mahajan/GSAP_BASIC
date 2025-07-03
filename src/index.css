@@ -1,9 +1,7 @@
 @import "tailwindcss";
 @import '@fontsource-variable/orbitron';
 
-body {
-  font-family: 'Orbitron Variable', sans-serif;
-}
+
 
 @font-face {
   font-family: Orbitron;
@@ -14,6 +12,7 @@ body {
   font-family: Gilroy;
   src: url(./assets/orbitron_5.2.6.zip);
 }
+
 
 
 /* *{

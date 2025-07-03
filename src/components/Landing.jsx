@@ -7,11 +7,11 @@ const Landing = () => {
         <div className="textstructure mt-40 px-20 md:px-16 lg:px-20">
           {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
             return (
-              <div className="masker flex sm:mb-6">
+              <div key={index} className="masker flex sm:mb-6">
                 {index === 1 && (
                   <div className="mr-5 sm:mr-5 rounded-md w-[10vw] sm:w-[10vw] h-[4.5vw] sm:h-[4.5vw] relative top-[0.8vw] bg-white"></div>
                 )}
-                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-[Orbitron] leading-[6vw] sm:leading-[6vw] tracking-tighter flex text-white font-semibold relative">
+                <h1 key={index} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-[Orbitron] leading-[6vw] sm:leading-[6vw] tracking-tighter flex text-white font-semibold relative">
                   {item}
                 </h1>
               </div>
