@@ -1,17 +1,26 @@
 import {MousePointer2 } from "lucide-react";
-import React from "react"; // Assuming you have a CSS file for styles
+import React from "react"; 
+import {motion} from "framer-motion"
 const Landing = () => {
   return (
     <div>
-      <div className="w-full min-h-screen bg-zinc-900 pt-2">
+      <div data-scroll data-scroll-speed="-0.8" className="w-full min-h-screen bg-zinc-900 pt-2">
         <div className="textstructure mt-40 px-20 md:px-16 lg:px-20">
           {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
             return (
-              <div key={index} className="masker flex sm:mb-6">
+              <div key={index} className="masker flex sm:mb-6 overflow-hidden">
                 {index === 1 && (
-                  <div className="mr-5 sm:mr-5 rounded-md w-[10vw] sm:w-[10vw] h-[4.5vw] sm:h-[4.5vw] relative top-[0.8vw] bg-white"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1] , duration: 1 }}
+                    className="mr-1 sm:mr-1 rounded-md w-[9vw] sm:w-[9vw] h-[4.5vw] sm:h-[4.5vw] relative top-[0.8vw] bg-white"
+                  ></motion.div>
                 )}
-                <h1 key={index} className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-[Orbitron] leading-[6vw] sm:leading-[6vw] tracking-tighter flex text-white font-semibold relative">
+                <h1
+                  key={index}
+                  className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-[orbitron] leading-[6vw] sm:leading-[6vw] tracking-tighter flex text-white font-semibold relative"
+                >
                   {item}
                 </h1>
               </div>

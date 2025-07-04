@@ -53,18 +53,26 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import Eyes from './components/Eyes'
 import Featured from './components/Featured'
+import Cards from './components/Cards'
+import Footer from './components/Footer'
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
+
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
-    <div className='w-full bg-zinc-900 min-h-screen'>
+    <div className="w-full bg-zinc-900 min-h-screen">
       <Navbar />
       <Landing />
       <Marquee />
       <About />
       <Eyes />
       <Featured />
+      <Cards />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App

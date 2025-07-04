@@ -1,16 +1,17 @@
 @import "tailwindcss";
-@import '@fontsource-variable/orbitron';
 
 
 
 @font-face {
   font-family: Orbitron;
-  src: url(./assets/orbitron_5.2.6_latin-wght-normal.woff2);
+  src: url(./fonts/orbitron_5.2.6_latin-wght-normal.woff2);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Gilroy;
-  src: url(./assets/orbitron_5.2.6.zip);
+  src: url(./fonts/FoundersGrotesk-Semibold.woff2);
+  font-display: swap;
 }
 
 

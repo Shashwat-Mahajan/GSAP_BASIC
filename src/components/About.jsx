@@ -2,7 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="w-full p-20 bg-[#CDEA68] rounded-tl-2xl rounded-tr-2xl text-black">
+    <div
+      data-scroll
+      data-scroll-speed="0.05"
+      className="w-full p-20 bg-[#CDEA68] rounded-tl-2xl rounded-tr-2xl text-black"
+    >
       <h1 className="text-[3.5vw] leading-[4vw] tracking-tight">
         Ochi is a strategic presentation agency for forward-thinking businesses
         that need to raise funds, sell products, explain complex ideas, and hire
